@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  console.log("license: ", license);
   const arrayBadge = [
     {
       "Apache 2.0 License":
@@ -19,8 +20,9 @@ function renderLicenseBadge(license) {
     },
   ];
 
-  if (license == undefined) {
-    return " ";
+  console.log("generatemark: ", arrayBadge[license]);
+  if (arrayBadge[license] == undefined) {
+    return "Not bage";
   } else {
     return arrayBadge[license];
   }
@@ -43,7 +45,7 @@ function renderLicenseLink(license) {
       "GNU GPL v3": "https://www.gnu.org/licenses/gpl-3.0",
     },
   ];
-  if (license == undefined) {
+  if (licenseLink[license] == undefined) {
     return " ";
   } else {
     return licenseLink[license];
@@ -61,4 +63,9 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {
+  renderLicenseBadge,
+  renderLicenseLink,
+  renderLicenseSection,
+  generateMarkdown
+};

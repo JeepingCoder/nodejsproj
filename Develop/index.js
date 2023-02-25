@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer")
 // TODO: Create an array of questions for user input
+const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
     {
         type: "input",
@@ -53,7 +54,7 @@ const questions = [
       message: "What is your email address",
       name: "email"
   },
-    
+]  
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -66,49 +67,53 @@ function init() {
   .then((answers) => {
     // Use user feedback for... whatever!!
     console.log(answers)
-    switch (answers.role) {
-      case "title":
-        console.log(answers.title);
-        break;
+    console.log(answers.License)
+    let licenseBadge = generateMarkdown.renderLicenseBadge(answers.License);
+    console.log("licenseBadge", licenseBadge);
 
-        case "description":
-          console.log(answers.description);
-        break;
+    // switch (answers.role) {
+    //   case "title":
+    //     console.log(answers.title);
+    //     break;
+
+    //     case "description":
+    //       console.log(answers.description);
+    //     break;
 
 
-        case "installation":
-          console.log(answers.installation);
+    //     case "installation":
+    //       console.log(answers.installation);
         
-        break;
+    //     break;
 
-        case "usage":
+    //     case "usage":
         
-        break;
+    //     break;
 
-        case "license":
+    //     case "license":
         
-        break;
+    //     break;
 
 
-        case "contributions":
+    //     case "contributions":
         
-        break;
+    //     break;
 
-        case "tests":
+    //     case "tests":
         
-        break;
+    //     break;
 
-        case "questions":
+    //     case "questions":
         
-        break;
+    //     break;
 
-        case "username":
+    //     case "username":
         
-        break;
+    //     break;
 
-        case "email":
+    //     case "email":
         
-        break;
+    //     break;
     
     
     
@@ -116,9 +121,9 @@ function init() {
     
     
     
-      default:
-        break;
-    }
+    //   default:
+    //     break;
+    // }
   })
   .catch((error) => {
     if (error.isTtyError) {
