@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer")
+const fs = require("fs")
 // TODO: Create an array of questions for user input
 const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
@@ -71,7 +72,16 @@ function init() {
     console.log(answers.License)
     let licenseBadge = generateMarkdown.renderLicenseBadge(answers.License);
     console.log("licenseBadge", licenseBadge);
-   let file =  generateMarkdown.generateMarkdown(answers)
+
+   let license = generateMarkdown.renderLicenseBadge(answers.license);
+    let licenseLink = generateMarkdown.renderLicenseLink(answers.license);
+    let licenseSection = generateMarkdown.renderLicenseSection(answers.license);
+
+   let file =  generateMarkdown.generateMarkdown(answers, license, licenseLink, licenseSection);
+
+  //  fs.writeFileSync("./utils/READ.md", file, {type: "utf8"})
+
+
    console.log("file", file)
 
     // switch (answers.role) {
