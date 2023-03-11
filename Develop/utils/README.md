@@ -1,6 +1,6 @@
 
   # ReadMe Generator
-  [![image alt text](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+  [![image alt text](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 
 ## Table of Contents
 - [Description](#description)
@@ -14,21 +14,25 @@
 
 
 ## Description <a id="description"></a>
-This project is made to streamline the task of building a README.md file for projects
+This is a simple way for the user to simply answer questions and build a readme.
 
 ## Usage <a id="usage"></a>
-Answer the question and then use the completed README.md that is generated. 
+The project is best used for quickly creating a readme with license badges and iformation. As well as having testing utilities available.
 
 ## Installation <a id="installation"></a>
-Open Integrated Terminal and run node index and answer the questions.
+open integrated terminal and run node index. Answer the questions and it will build the ReadMe file for you
 
 ## Testing Utilities <a id="testing-utilities"></a>
-Chai
+Mocha
 
 ## Contributors <a id="contributors"></a>
-Patrick Ingram, My instructor, teaching staff and tutors.
+My teaching staff, tutors and some classmates
 
 ## LICENSE <a id="license"></a>
-Eclipse Public License 1.0
-Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. The Eclipse Foundation is the initial Agreement Steward. The Eclipse Foundation may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version. Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.
+The MIT License
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   
