@@ -1,5 +1,5 @@
 
-  # Readme Generator
+  # ReadMe Generator
   [![image alt text](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
 
 ## Table of Contents
@@ -14,19 +14,19 @@
 
 
 ## Description <a id="description"></a>
-builds a readme through terminal
+This project is made to streamline the task of building a README.md file for projects
 
 ## Usage <a id="usage"></a>
-create a readme for projects
+Answer the question and then use the completed README.md that is generated. 
 
 ## Installation <a id="installation"></a>
-run node index, fill in answers on questionare and the readme file will generate
+Open Integrated Terminal and run node index and answer the questions.
 
 ## Testing Utilities <a id="testing-utilities"></a>
-Mocha
+Chai
 
 ## Contributors <a id="contributors"></a>
-Tutor John, Tutor Ngyuen
+Patrick Ingram, My instructor, teaching staff and tutors.
 
 ## LICENSE <a id="license"></a>
 Eclipse Public License 1.0
